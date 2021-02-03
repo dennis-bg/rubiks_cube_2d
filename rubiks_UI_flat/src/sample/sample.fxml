@@ -1,0 +1,261 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.image.ImageView?>
+<HBox fx:controller="sample.Controller"
+      xmlns:fx="http://javafx.com/fxml" alignment="center" style="-fx-background-color: #000000">
+    <padding>
+        <Insets topRightBottomLeft="10"/>
+    </padding>
+
+    <GridPane hgap="40" vgap="40">
+        <padding>
+            <Insets left="40"  top="100"/>
+        </padding>
+        <VBox GridPane.rowIndex="0" GridPane.columnIndex="0">
+            <GridPane hgap="10" vgap="10">
+
+                <Label GridPane.rowIndex="0" GridPane.columnIndex="0" prefWidth="1" prefHeight="1"/>
+                <Label fx:id="whiteTopLeft" GridPane.rowIndex="0" GridPane.columnIndex="1" prefWidth="50" prefHeight="5"/>
+                <Label fx:id="whiteTopCenter" GridPane.rowIndex="0" GridPane.columnIndex="2" prefWidth="50" prefHeight="5"/>
+                <Label fx:id="whiteTopRight" GridPane.rowIndex="0" GridPane.columnIndex="3" prefWidth="50" prefHeight="5"/>
+                <Label GridPane.rowIndex="0" GridPane.columnIndex="4" prefWidth="1" prefHeight="1"/>
+                <Label fx:id="whiteLeftTop" GridPane.rowIndex="1" GridPane.columnIndex="0" prefWidth="25" prefHeight="50"/>
+                <Label fx:id="whiteLeftCenter" GridPane.rowIndex="2" GridPane.columnIndex="0" prefWidth="25" prefHeight="50"/>
+                <Label fx:id="whiteLeftBottom" GridPane.rowIndex="3" GridPane.columnIndex="0" prefWidth="25" prefHeight="50"/>
+                <Label GridPane.rowIndex="4" GridPane.columnIndex="0" prefWidth="1" prefHeight="1"/>
+                <Label fx:id="whiteBottomLeft" GridPane.rowIndex="4" GridPane.columnIndex="1" prefWidth="50" prefHeight="5"/>
+                <Label fx:id="whiteBottomCenter" GridPane.rowIndex="4" GridPane.columnIndex="2" prefWidth="50" prefHeight="5"/>
+                <Label fx:id="whiteBottomRight" GridPane.rowIndex="4" GridPane.columnIndex="3" prefWidth="50" prefHeight="5"/>
+                <Label GridPane.rowIndex="4" GridPane.columnIndex="4" prefWidth="1" prefHeight="1"/>
+                <Label fx:id="whiteRightTop" GridPane.rowIndex="1" GridPane.columnIndex="4" prefWidth="25" prefHeight="50"/>
+                <Label fx:id="whiteRightCenter" GridPane.rowIndex="2" GridPane.columnIndex="4" prefWidth="25" prefHeight="50"/>
+                <Label fx:id="whiteRightBottom" GridPane.rowIndex="3" GridPane.columnIndex="4" prefWidth="25" prefHeight="50"/>
+
+                <Label fx:id="white1" GridPane.rowIndex="1" GridPane.columnIndex="1" prefWidth="50" prefHeight="50"/>
+                <Label fx:id="white2" GridPane.rowIndex="1" GridPane.columnIndex="2" prefWidth="50" prefHeight="50"/>
+                <Label fx:id="white3" GridPane.rowIndex="1" GridPane.columnIndex="3" prefWidth="50" prefHeight="50"/>
+                <Label fx:id="white4" GridPane.rowIndex="2" GridPane.columnIndex="1" prefWidth="50" prefHeight="50"/>
+                <Label fx:id="white5" GridPane.rowIndex="2" GridPane.columnIndex="2" prefWidth="50" prefHeight="50"/>
+                <Label fx:id="white6" GridPane.rowIndex="2" GridPane.columnIndex="3" prefWidth="50" prefHeight="50"/>
+                <Label fx:id="white7" GridPane.rowIndex="3" GridPane.columnIndex="1" prefWidth="50" prefHeight="50"/>
+                <Label fx:id="white8" GridPane.rowIndex="3" GridPane.columnIndex="2" prefWidth="50" prefHeight="50"/>
+                <Label fx:id="white9" GridPane.rowIndex="3" GridPane.columnIndex="3" prefWidth="50" prefHeight="50"/>
+            </GridPane>
+            <HBox alignment="CENTER">
+                <padding>
+                    <Insets left="5" top="20" bottom="20"/>
+                </padding>
+                <Button fx:id="whitePrime" onAction="#turnClick" prefHeight="40" prefWidth="40" text="&lt;&lt;" style="-fx-background-color: #FFFFFF"/>
+                <Label prefWidth="50"/>
+                <Button fx:id="whiteTurn" onAction="#turnClick" prefHeight="40" prefWidth="40" text="&gt;&gt;" style="-fx-background-color: #FFFFFF"/>
+            </HBox>
+        </VBox>
+        <VBox GridPane.rowIndex="0" GridPane.columnIndex="1">
+            <GridPane hgap="10" vgap="10">
+                <Label GridPane.rowIndex="0" GridPane.columnIndex="0" prefWidth="1" prefHeight="1"/>
+                <Label fx:id="redTopLeft" GridPane.rowIndex="0" GridPane.columnIndex="1" prefWidth="50" prefHeight="5"/>
+                <Label fx:id="redTopCenter" GridPane.rowIndex="0" GridPane.columnIndex="2" prefWidth="50" prefHeight="5"/>
+                <Label fx:id="redTopRight" GridPane.rowIndex="0" GridPane.columnIndex="3" prefWidth="50" prefHeight="5"/>
+                <Label GridPane.rowIndex="0" GridPane.columnIndex="4" prefWidth="1" prefHeight="1"/>
+                <Label fx:id="redLeftTop" GridPane.rowIndex="1" GridPane.columnIndex="0" prefWidth="25" prefHeight="50"/>
+                <Label fx:id="redLeftCenter" GridPane.rowIndex="2" GridPane.columnIndex="0" prefWidth="25" prefHeight="50"/>
+                <Label fx:id="redLeftBottom" GridPane.rowIndex="3" GridPane.columnIndex="0" prefWidth="25" prefHeight="50"/>
+                <Label GridPane.rowIndex="4" GridPane.columnIndex="0" prefWidth="1" prefHeight="1"/>
+                <Label fx:id="redBottomLeft" GridPane.rowIndex="4" GridPane.columnIndex="1" prefWidth="50" prefHeight="5"/>
+                <Label fx:id="redBottomCenter" GridPane.rowIndex="4" GridPane.columnIndex="2" prefWidth="50" prefHeight="5"/>
+                <Label fx:id="redBottomRight" GridPane.rowIndex="4" GridPane.columnIndex="3" prefWidth="50" prefHeight="5"/>
+                <Label GridPane.rowIndex="4" GridPane.columnIndex="4" prefWidth="1" prefHeight="1"/>
+                <Label fx:id="redRightTop" GridPane.rowIndex="1" GridPane.columnIndex="4" prefWidth="25" prefHeight="50"/>
+                <Label fx:id="redRightCenter" GridPane.rowIndex="2" GridPane.columnIndex="4" prefWidth="25" prefHeight="50"/>
+                <Label fx:id="redRightBottom" GridPane.rowIndex="3" GridPane.columnIndex="4" prefWidth="25" prefHeight="50"/>
+
+                <Label fx:id="red1" GridPane.rowIndex="1" GridPane.columnIndex="1" prefWidth="50" prefHeight="50"/>
+                <Label fx:id="red4" GridPane.rowIndex="2" GridPane.columnIndex="1" prefWidth="50" prefHeight="50"/>
+                <Label fx:id="red2" GridPane.rowIndex="1" GridPane.columnIndex="2" prefWidth="50" prefHeight="50"/>
+                <Label fx:id="red3" GridPane.rowIndex="1" GridPane.columnIndex="3" prefWidth="50" prefHeight="50"/>
+                <Label fx:id="red5" GridPane.rowIndex="2" GridPane.columnIndex="2" prefWidth="50" prefHeight="50"/>
+                <Label fx:id="red6" GridPane.rowIndex="2" GridPane.columnIndex="3" prefWidth="50" prefHeight="50"/>
+                <Label fx:id="red7" GridPane.rowIndex="3" GridPane.columnIndex="1" prefWidth="50" prefHeight="50"/>
+                <Label fx:id="red8" GridPane.rowIndex="3" GridPane.columnIndex="2" prefWidth="50" prefHeight="50"/>
+                <Label fx:id="red9" GridPane.rowIndex="3" GridPane.columnIndex="3" prefWidth="50" prefHeight="50"/>
+            </GridPane>
+            <HBox alignment="CENTER">
+                <padding>
+                    <Insets left="5" top="20" bottom="20"/>
+                </padding>
+                <Button fx:id="redPrime" onAction="#turnClick" prefHeight="40" prefWidth="40" text="&lt;&lt;" style="-fx-background-color: #FFFFFF"/>
+                <Label prefWidth="50"/>
+                <Button fx:id="redTurn" onAction="#turnClick" prefHeight="40" prefWidth="40" text="&gt;&gt;" style="-fx-background-color: #FFFFFF"/>
+            </HBox>
+        </VBox>
+
+        <VBox GridPane.rowIndex="0" GridPane.columnIndex="2">
+            <GridPane hgap="10" vgap="10">
+
+                <Label GridPane.rowIndex="0" GridPane.columnIndex="0" prefWidth="1" prefHeight="1"/>
+                <Label fx:id="blueTopLeft" GridPane.rowIndex="0" GridPane.columnIndex="1" prefWidth="50" prefHeight="5"/>
+                <Label fx:id="blueTopCenter" GridPane.rowIndex="0" GridPane.columnIndex="2" prefWidth="50" prefHeight="5"/>
+                <Label fx:id="blueTopRight" GridPane.rowIndex="0" GridPane.columnIndex="3" prefWidth="50" prefHeight="5"/>
+                <Label GridPane.rowIndex="0" GridPane.columnIndex="4" prefWidth="1" prefHeight="1"/>
+                <Label fx:id="blueLeftTop" GridPane.rowIndex="1" GridPane.columnIndex="0" prefWidth="25" prefHeight="50"/>
+                <Label fx:id="blueLeftCenter" GridPane.rowIndex="2" GridPane.columnIndex="0" prefWidth="25" prefHeight="50"/>
+                <Label fx:id="blueLeftBottom" GridPane.rowIndex="3" GridPane.columnIndex="0" prefWidth="25" prefHeight="50"/>
+                <Label GridPane.rowIndex="4" GridPane.columnIndex="0" prefWidth="1" prefHeight="1"/>
+                <Label fx:id="blueBottomLeft" GridPane.rowIndex="4" GridPane.columnIndex="1" prefWidth="50" prefHeight="5"/>
+                <Label fx:id="blueBottomCenter" GridPane.rowIndex="4" GridPane.columnIndex="2" prefWidth="50" prefHeight="5"/>
+                <Label fx:id="blueBottomRight" GridPane.rowIndex="4" GridPane.columnIndex="3" prefWidth="50" prefHeight="5"/>
+                <Label GridPane.rowIndex="4" GridPane.columnIndex="4" prefWidth="1" prefHeight="1"/>
+                <Label fx:id="blueRightTop" GridPane.rowIndex="1" GridPane.columnIndex="4" prefWidth="25" prefHeight="50"/>
+                <Label fx:id="blueRightCenter" GridPane.rowIndex="2" GridPane.columnIndex="4" prefWidth="25" prefHeight="50"/>
+                <Label fx:id="blueRightBottom" GridPane.rowIndex="3" GridPane.columnIndex="4" prefWidth="25" prefHeight="50"/>
+
+                <Label fx:id="blue1" GridPane.rowIndex="1" GridPane.columnIndex="1" prefWidth="50" prefHeight="50"/>
+                <Label fx:id="blue2" GridPane.rowIndex="1" GridPane.columnIndex="2" prefWidth="50" prefHeight="50"/>
+                <Label fx:id="blue3" GridPane.rowIndex="1" GridPane.columnIndex="3" prefWidth="50" prefHeight="50"/>
+                <Label fx:id="blue4" GridPane.rowIndex="2" GridPane.columnIndex="1" prefWidth="50" prefHeight="50"/>
+                <Label fx:id="blue5" GridPane.rowIndex="2" GridPane.columnIndex="2" prefWidth="50" prefHeight="50"/>
+                <Label fx:id="blue6" GridPane.rowIndex="2" GridPane.columnIndex="3" prefWidth="50" prefHeight="50"/>
+                <Label fx:id="blue7" GridPane.rowIndex="3" GridPane.columnIndex="1" prefWidth="50" prefHeight="50"/>
+                <Label fx:id="blue8" GridPane.rowIndex="3" GridPane.columnIndex="2" prefWidth="50" prefHeight="50"/>
+                <Label fx:id="blue9" GridPane.rowIndex="3" GridPane.columnIndex="3" prefWidth="50" prefHeight="50"/>
+            </GridPane>
+            <HBox alignment="CENTER">
+                <padding>
+                    <Insets left="5" top="20" bottom="20"/>
+                </padding>
+                <Button fx:id="bluePrime" onAction="#turnClick" prefHeight="40" prefWidth="40" text="&lt;&lt;" style="-fx-background-color: #FFFFFF"/>
+                <Label prefWidth="50"/>
+                <Button fx:id="blueTurn" onAction="#turnClick" prefHeight="40" prefWidth="40" text="&gt;&gt;" style="-fx-background-color: #FFFFFF"/>
+            </HBox>
+        </VBox>
+
+        <VBox GridPane.rowIndex="1" GridPane.columnIndex="0">
+            <GridPane hgap="10" vgap="10">
+
+                <Label GridPane.rowIndex="0" GridPane.columnIndex="0" prefWidth="1" prefHeight="1"/>
+                <Label fx:id="orangeTopLeft" GridPane.rowIndex="0" GridPane.columnIndex="1" prefWidth="50" prefHeight="5"/>
+                <Label fx:id="orangeTopCenter" GridPane.rowIndex="0" GridPane.columnIndex="2" prefWidth="50" prefHeight="5"/>
+                <Label fx:id="orangeTopRight" GridPane.rowIndex="0" GridPane.columnIndex="3" prefWidth="50" prefHeight="5"/>
+                <Label GridPane.rowIndex="0" GridPane.columnIndex="4" prefWidth="1" prefHeight="1"/>
+                <Label fx:id="orangeLeftTop" GridPane.rowIndex="1" GridPane.columnIndex="0" prefWidth="25" prefHeight="50"/>
+                <Label fx:id="orangeLeftCenter" GridPane.rowIndex="2" GridPane.columnIndex="0" prefWidth="25" prefHeight="50"/>
+                <Label fx:id="orangeLeftBottom" GridPane.rowIndex="3" GridPane.columnIndex="0" prefWidth="25" prefHeight="50"/>
+                <Label GridPane.rowIndex="4" GridPane.columnIndex="0" prefWidth="1" prefHeight="1"/>
+                <Label fx:id="orangeBottomLeft" GridPane.rowIndex="4" GridPane.columnIndex="1" prefWidth="50" prefHeight="5"/>
+                <Label fx:id="orangeBottomCenter" GridPane.rowIndex="4" GridPane.columnIndex="2" prefWidth="50" prefHeight="5"/>
+                <Label fx:id="orangeBottomRight" GridPane.rowIndex="4" GridPane.columnIndex="3" prefWidth="50" prefHeight="5"/>
+                <Label GridPane.rowIndex="4" GridPane.columnIndex="4" prefWidth="1" prefHeight="1"/>
+                <Label fx:id="orangeRightTop" GridPane.rowIndex="1" GridPane.columnIndex="4" prefWidth="25" prefHeight="50"/>
+                <Label fx:id="orangeRightCenter" GridPane.rowIndex="2" GridPane.columnIndex="4" prefWidth="25" prefHeight="50"/>
+                <Label fx:id="orangeRightBottom" GridPane.rowIndex="3" GridPane.columnIndex="4" prefWidth="25" prefHeight="50"/>
+
+                <Label fx:id="orange1" GridPane.rowIndex="1" GridPane.columnIndex="1" prefWidth="50" prefHeight="50"/>
+                <Label fx:id="orange2" GridPane.rowIndex="1" GridPane.columnIndex="2" prefWidth="50" prefHeight="50"/>
+                <Label fx:id="orange3" GridPane.rowIndex="1" GridPane.columnIndex="3" prefWidth="50" prefHeight="50"/>
+                <Label fx:id="orange4" GridPane.rowIndex="2" GridPane.columnIndex="1" prefWidth="50" prefHeight="50"/>
+                <Label fx:id="orange5" GridPane.rowIndex="2" GridPane.columnIndex="2" prefWidth="50" prefHeight="50"/>
+                <Label fx:id="orange6" GridPane.rowIndex="2" GridPane.columnIndex="3" prefWidth="50" prefHeight="50"/>
+                <Label fx:id="orange7" GridPane.rowIndex="3" GridPane.columnIndex="1" prefWidth="50" prefHeight="50"/>
+                <Label fx:id="orange8" GridPane.rowIndex="3" GridPane.columnIndex="2" prefWidth="50" prefHeight="50"/>
+                <Label fx:id="orange9" GridPane.rowIndex="3" GridPane.columnIndex="3" prefWidth="50" prefHeight="50"/>
+            </GridPane>
+            <HBox alignment="CENTER">
+                <padding>
+                    <Insets left="5" top="20" bottom="20"/>
+                </padding>
+                <Button fx:id="orangePrime" onAction="#turnClick" prefHeight="40" prefWidth="40" text="&lt;&lt;" style="-fx-background-color: #FFFFFF"/>
+                <Label prefWidth="50"/>
+                <Button fx:id="orangeTurn" onAction="#turnClick" prefHeight="40" prefWidth="40" text="&gt;&gt;" style="-fx-background-color: #FFFFFF"/>
+            </HBox>
+        </VBox>
+
+        <VBox GridPane.rowIndex="1" GridPane.columnIndex="1">
+            <GridPane hgap="10" vgap="10">
+
+                <Label GridPane.rowIndex="0" GridPane.columnIndex="0" prefWidth="1" prefHeight="1"/>
+                <Label fx:id="greenTopLeft" GridPane.rowIndex="0" GridPane.columnIndex="1" prefWidth="50" prefHeight="5"/>
+                <Label fx:id="greenTopCenter" GridPane.rowIndex="0" GridPane.columnIndex="2" prefWidth="50" prefHeight="5"/>
+                <Label fx:id="greenTopRight" GridPane.rowIndex="0" GridPane.columnIndex="3" prefWidth="50" prefHeight="5"/>
+                <Label GridPane.rowIndex="0" GridPane.columnIndex="4" prefWidth="1" prefHeight="1"/>
+                <Label fx:id="greenLeftTop" GridPane.rowIndex="1" GridPane.columnIndex="0" prefWidth="25" prefHeight="50"/>
+                <Label fx:id="greenLeftCenter" GridPane.rowIndex="2" GridPane.columnIndex="0" prefWidth="25" prefHeight="50"/>
+                <Label fx:id="greenLeftBottom" GridPane.rowIndex="3" GridPane.columnIndex="0" prefWidth="25" prefHeight="50"/>
+                <Label GridPane.rowIndex="4" GridPane.columnIndex="0" prefWidth="1" prefHeight="1"/>
+                <Label fx:id="greenBottomLeft" GridPane.rowIndex="4" GridPane.columnIndex="1" prefWidth="50" prefHeight="5"/>
+                <Label fx:id="greenBottomCenter" GridPane.rowIndex="4" GridPane.columnIndex="2" prefWidth="50" prefHeight="5"/>
+                <Label fx:id="greenBottomRight" GridPane.rowIndex="4" GridPane.columnIndex="3" prefWidth="50" prefHeight="5"/>
+                <Label GridPane.rowIndex="4" GridPane.columnIndex="4" prefWidth="1" prefHeight="1"/>
+                <Label fx:id="greenRightTop" GridPane.rowIndex="1" GridPane.columnIndex="4" prefWidth="25" prefHeight="50"/>
+                <Label fx:id="greenRightCenter" GridPane.rowIndex="2" GridPane.columnIndex="4" prefWidth="25" prefHeight="50"/>
+                <Label fx:id="greenRightBottom" GridPane.rowIndex="3" GridPane.columnIndex="4" prefWidth="25" prefHeight="50"/>
+
+                <Label fx:id="green1" GridPane.rowIndex="1" GridPane.columnIndex="1" prefWidth="50" prefHeight="50"/>
+                <Label fx:id="green2" GridPane.rowIndex="1" GridPane.columnIndex="2" prefWidth="50" prefHeight="50"/>
+                <Label fx:id="green3" GridPane.rowIndex="1" GridPane.columnIndex="3" prefWidth="50" prefHeight="50"/>
+                <Label fx:id="green4" GridPane.rowIndex="2" GridPane.columnIndex="1" prefWidth="50" prefHeight="50"/>
+                <Label fx:id="green5" GridPane.rowIndex="2" GridPane.columnIndex="2" prefWidth="50" prefHeight="50"/>
+                <Label fx:id="green6" GridPane.rowIndex="2" GridPane.columnIndex="3" prefWidth="50" prefHeight="50"/>
+                <Label fx:id="green7" GridPane.rowIndex="3" GridPane.columnIndex="1" prefWidth="50" prefHeight="50"/>
+                <Label fx:id="green8" GridPane.rowIndex="3" GridPane.columnIndex="2" prefWidth="50" prefHeight="50"/>
+                <Label fx:id="green9" GridPane.rowIndex="3" GridPane.columnIndex="3" prefWidth="50" prefHeight="50"/>
+            </GridPane>
+            <HBox alignment="CENTER">
+                <padding>
+                    <Insets left="5" top="20" bottom="20"/>
+                </padding>
+                <Button fx:id="greenPrime" onAction="#turnClick" prefHeight="40" prefWidth="40" text="&lt;&lt;" style="-fx-background-color: #FFFFFF"/>
+                <Label prefWidth="50"/>
+                <Button fx:id="greenTurn" onAction="#turnClick" prefHeight="40" prefWidth="40" text="&gt;&gt;" style="-fx-background-color: #FFFFFF"/>
+            </HBox>
+        </VBox>
+
+        <VBox GridPane.rowIndex="1" GridPane.columnIndex="2">
+            <GridPane hgap="10" vgap="10">
+
+                <Label GridPane.rowIndex="0" GridPane.columnIndex="0" prefWidth="1" prefHeight="1"/>
+                <Label fx:id="yellowTopLeft" GridPane.rowIndex="0" GridPane.columnIndex="1" prefWidth="50" prefHeight="5"/>
+                <Label fx:id="yellowTopCenter" GridPane.rowIndex="0" GridPane.columnIndex="2" prefWidth="50" prefHeight="5"/>
+                <Label fx:id="yellowTopRight" GridPane.rowIndex="0" GridPane.columnIndex="3" prefWidth="50" prefHeight="5"/>
+                <Label GridPane.rowIndex="0" GridPane.columnIndex="4" prefWidth="1" prefHeight="1"/>
+                <Label fx:id="yellowLeftTop" GridPane.rowIndex="1" GridPane.columnIndex="0" prefWidth="25" prefHeight="50"/>
+                <Label fx:id="yellowLeftCenter" GridPane.rowIndex="2" GridPane.columnIndex="0" prefWidth="25" prefHeight="50"/>
+                <Label fx:id="yellowLeftBottom" GridPane.rowIndex="3" GridPane.columnIndex="0" prefWidth="25" prefHeight="50"/>
+                <Label GridPane.rowIndex="4" GridPane.columnIndex="0" prefWidth="1" prefHeight="1"/>
+                <Label fx:id="yellowBottomLeft" GridPane.rowIndex="4" GridPane.columnIndex="1" prefWidth="50" prefHeight="5"/>
+                <Label fx:id="yellowBottomCenter" GridPane.rowIndex="4" GridPane.columnIndex="2" prefWidth="50" prefHeight="5"/>
+                <Label fx:id="yellowBottomRight" GridPane.rowIndex="4" GridPane.columnIndex="3" prefWidth="50" prefHeight="5"/>
+                <Label GridPane.rowIndex="4" GridPane.columnIndex="4" prefWidth="1" prefHeight="1"/>
+                <Label fx:id="yellowRightTop" GridPane.rowIndex="1" GridPane.columnIndex="4" prefWidth="25" prefHeight="50"/>
+                <Label fx:id="yellowRightCenter" GridPane.rowIndex="2" GridPane.columnIndex="4" prefWidth="25" prefHeight="50"/>
+                <Label fx:id="yellowRightBottom" GridPane.rowIndex="3" GridPane.columnIndex="4" prefWidth="25" prefHeight="50"/>
+
+                <Label fx:id="yellow1" GridPane.rowIndex="1" GridPane.columnIndex="1" prefWidth="50" prefHeight="50"/>
+                <Label fx:id="yellow2" GridPane.rowIndex="1" GridPane.columnIndex="2" prefWidth="50" prefHeight="50"/>
+                <Label fx:id="yellow3" GridPane.rowIndex="1" GridPane.columnIndex="3" prefWidth="50" prefHeight="50"/>
+                <Label fx:id="yellow4" GridPane.rowIndex="2" GridPane.columnIndex="1" prefWidth="50" prefHeight="50"/>
+                <Label fx:id="yellow5" GridPane.rowIndex="2" GridPane.columnIndex="2" prefWidth="50" prefHeight="50"/>
+                <Label fx:id="yellow6" GridPane.rowIndex="2" GridPane.columnIndex="3" prefWidth="50" prefHeight="50"/>
+                <Label fx:id="yellow7" GridPane.rowIndex="3" GridPane.columnIndex="1" prefWidth="50" prefHeight="50"/>
+                <Label fx:id="yellow8" GridPane.rowIndex="3" GridPane.columnIndex="2" prefWidth="50" prefHeight="50"/>
+                <Label fx:id="yellow9" GridPane.rowIndex="3" GridPane.columnIndex="3" prefWidth="50" prefHeight="50"/>
+            </GridPane>
+            <HBox alignment="CENTER">
+                <padding>
+                    <Insets left="5" top="20" bottom="20"/>
+                </padding>
+                <Button fx:id="yellowPrime" onAction="#turnClick" prefHeight="40" prefWidth="40" text="&lt;&lt;" style="-fx-background-color: #FFFFFF"/>
+                <Label prefWidth="50"/>
+                <Button fx:id="yellowTurn" onAction="#turnClick" prefHeight="40" prefWidth="40" text="&gt;&gt;" style="-fx-background-color: #FFFFFF"/>
+            </HBox>
+        </VBox>
+    </GridPane>
+
+    <GridPane prefWidth="50" prefHeight="100" style="-fx-border-color: wiite"/>
+</HBox>
